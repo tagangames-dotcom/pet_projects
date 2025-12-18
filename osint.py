@@ -5,6 +5,7 @@ import webbrowser
 root = Tk()
 root.title("Google Dorks GUI")
 root.geometry("500x600")
+root.iconbitmap(r"D:\программироваание проекты\pet_projects\1764466492.ico")
 
 # Поля ввода
 Label(root, text="Текст для поиска:").pack()
