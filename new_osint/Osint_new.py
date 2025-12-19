@@ -2,7 +2,7 @@ import sys
 import webbrowser
 from PySide6.QtWidgets import QApplication, QMainWindow
 from PySide6.QtGui import QIcon
-from osint_new_Window import Ui_MainWindow  # твой сгенерированный файл
+from osint_new_Window import Ui_MainWindow
 
 class MyWindow(QMainWindow):
     def __init__(self):
