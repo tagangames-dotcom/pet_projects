@@ -2,7 +2,7 @@ from tkinter import *
 import webbrowser
 import os
 from tkinter import PhotoImage
-# интерфейс
+# интерфейc
 root = Tk()
 root.title("Google Dorks GUI")
 root.geometry("500x600")
