@@ -1,11 +1,22 @@
 from tkinter import *
 import webbrowser
-
+import os
+from tkinter import PhotoImage
 # интерфейс
 root = Tk()
 root.title("Google Dorks GUI")
 root.geometry("500x600")
-#root.iconbitmap(r"D:\программироваание проекты\pet_projects\1764466492.ico")
+current_dir = os.path.dirname(os.path.abspath(__file__))
+icon_path = os.path.join(current_dir, "icon.png")
+
+try:
+    if os.path.exists(icon_path):
+        img = PhotoImage(file=icon_path)
+        root.iconphoto(False, img)
+    else:
+        print('Иконка не найдена')
+except Exception as e:
+    print(f"не удалось найти икноку: {e}")
 
 # Поля ввода
 Label(root, text="Текст для поиска:").pack()
